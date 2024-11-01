@@ -1,0 +1,24 @@
+@import url('styles/reset.css');
+@import url('styles/fonts.css');
+@import url('styles/main.css');
+@import url('styles/footer.css');
+:root {
+    --background-color: #F9F7FE;
+    --background-light-color: #FFFFFF;
+    --font-color: #464646;
+    --font-light-color: #A3A3A3;
+    --main-font: 'Montserrat';
+    --light-border-color: #F0EEEF;
+    --orange-button-color: #FFB050;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--font-color);
+}
+
+
+

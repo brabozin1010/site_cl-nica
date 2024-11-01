@@ -1,0 +1,45 @@
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: white;
+    width: 95%;
+    bottom: 0;
+    position: fixed;
+}
+
+.footer__item > a {
+    text-decoration: none;
+}
+
+.footer__item {
+    text-align: center;
+    width: 20%;
+    height: 2.5em;
+}
+
+.item__text{
+    margin-top: 0.3em;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.menu__icon {
+    margin-top: 0.3em;
+}
+
+.reports__icon {
+    margin-top: 0.1em;
+}
+
+.floating-button{
+    position: fixed;
+    bottom: 3.5em;
+    left: 77.5%;
+}
+
+.floating-button__icon {
+    width: auto;
+}

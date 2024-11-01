@@ -1,0 +1,159 @@
+.profile{
+    display: flex;
+    gap: 1em;
+    padding: 2em 0em 2.2em 1.4em;
+    align-items: center;
+}
+
+.profile__image {
+    border-radius: 50%;
+    width: 18%;
+}
+
+.text__title {
+    font-size: 1.375rem;
+}
+
+.text__paragraph{
+    margin: 0.62em 5.7em 0 0;
+    color: var(--font-light-color);
+    font-weight: 400;
+}
+
+.appointments {
+    width: 92%;
+    margin: 0 1em;
+}
+
+.day__title {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.day__list {
+    margin-bottom: 2em;
+}
+
+.list__appointment-online {
+    background-color: var(--background-light-color);
+    border-radius: 0.5em;
+    margin: 1em 0;
+}
+
+.appointment-online__top {
+    padding: 1.2em 0 1em 1em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    border-bottom: 2px solid var(--light-border-color);
+}
+
+.appointment-online__top > a {
+    margin: 0 1em 1em 0;
+}
+
+.top__text {
+    width: 60%;
+    /* margin-right: 30%; */
+}
+
+.top__customers-picture {
+    width: 8%;
+}
+
+.top__customers-name {
+    font-size: 0.875rem;
+    margin-bottom: 0.4em;
+}
+
+.top__appointment-way {
+    display: inline;
+}
+
+.appointment-online__bottom {
+    padding: 1em 0 1em 1em;
+}
+
+.appointment__hour {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.bottom__button {
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1.075rem 1.2rem;
+    margin-top: 1em;
+    border-radius: 0.5em;
+    display: inline-block;
+    width: 30%;
+}
+
+.bottom__audio-button {
+    border: 2px solid var(--light-border-color);
+    color: var(--font-color);
+}
+
+.bottom__video-button {
+    background-color: var(--orange-button-color);
+    color: white;
+    margin-right: 1.05em;
+}
+
+.check-address-button{
+    padding-inline: 7.5em;
+    color: white;
+    background-color: #4894FF;
+}
+
+@media screen and (min-width: 1024px) {
+    .day__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list__appointment-online {
+        margin: 1% 4%;
+    }
+
+    .appointments {
+        margin: 0 5%;
+    }
+
+    .profile {
+        padding-left: 6em;
+        padding-top: 3em;
+    }
+
+    .profile__text {
+        margin: 0 0 0 4em;
+    }
+
+    .list__appointment-online {
+        width: 40%;
+    }
+
+    .bottom__button {
+        width: 34%;
+    }
+
+    .check-address-button {
+        width: 45%;
+    }
+}
+
+
+@media screen and (min-width: 1690px) {
+    .list__appointment-online {
+        width: 30%;
+    }
+
+    .list__appointment-online {
+        margin: 1% 1%;
+    }
+
+    .appointments {
+        margin: 0 3%;
+    }
+}
