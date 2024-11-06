@@ -13,7 +13,7 @@
 
     <main>
         <section class="profile">
-            <img src="img/perfil-1.jpg" class="profile__image">
+            <img src="img/perfil-1.jpg" class="profile__image main__profile">
             <div class="profile__text">
                 <h1 class="text__title">Olá, Sônia</h1>
                 <p class="text__paragraph">Mais 4 consultas hoje</p>
@@ -137,6 +137,29 @@
 
             </div>
         </section>
+
+        <section class="form-section">
+            <h2 class='text__title'>Formulário para novas consultas </h2>
+            <form class="form">
+                <label for="nome" class="label-form">Nome:</label>
+                <label for="tipo-consulta" class="label-form label__tipo-consula">Tipo de consulta:</label><br>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" class="input-form">
+                <div class="form__modify-select">
+                    <select name="tipo-consulta" id="tipo-consulta" class="input-form">
+                        <option value="local">Local</option>
+                        <option value="online">Online</option> 
+                    </select><br>
+                </div>
+
+                <label for="data" class="label-form">Data da consulta:</label>
+                <label for="horario" class="label-form label__tipo-time">Data da consulta:</label><br>
+                <input type="date" id="data" name="data" class="input-form input-date">
+                <input type="time" id="horario" name="horario" class="input-form input-time"><br>
+                <label for="observacoes" class="label-form">Observações:</label><br>
+                <textarea cols="40" rows="5" id="observacoes" name="observacoes" class="input-form"></textarea><br>
+                <input type="submit" name="submit" value="Registrar" id="submit"/>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">
@@ -144,29 +167,31 @@
             <img class="floating-button__icon" src="img/Botão flutuante.svg">
         </a>
         
-        <div class='footer__item appointments-footer'>
-            <a href="#">
-                <img src="img/Calendarioicone.svg" class="item__icon">
-                <p class="item__text">Checkups</p>
-            </a>
-        </div>
-        <div class='footer__item customers'>
-            <a href="#">
-                <img src="img/clientes icone.svg" class="item__icon">
-                <p class="item__text">Customers</p>
-            </a>
-        </div>
-        <div class='footer__item reports'>
-            <a href="#">
-                <img src="img/relatorios icone.svg" class="item__icon reports__icon">
-                <p class="item__text">Reports</p>
-            </a>
-        </div>
-        <div class='footer__item menu'>
-            <a href="#">
-                <img src="img/menu icone.svg" class="item__icon menu__icon">
-                <p class="item__text">Menu</p>
-            </a>
+        <div class="footer__buttons">
+            <div class='footer__item appointments-footer'>
+                <a href="#">
+                    <img src="img/Calendarioicone.svg" class="item__icon">
+                    <p class="item__text">Checkups</p>
+                </a>
+            </div>
+            <div class='footer__item customers'>
+                <a href="#">
+                    <img src="img/clientes icone.svg" class="item__icon">
+                    <p class="item__text">Customers</p>
+                </a>
+            </div>
+            <div class='footer__item reports'>
+                <a href="#">
+                    <img src="img/relatorios icone.svg" class="item__icon reports__icon">
+                    <p class="item__text">Reports</p>
+                </a>
+            </div>
+            <div class='footer__item menu'>
+                <a href="#">
+                    <img src="img/menu icone.svg" class="item__icon menu__icon">
+                    <p class="item__text">Menu</p>
+                </a>
+            </div>
         </div>
     </footer>
 </body>

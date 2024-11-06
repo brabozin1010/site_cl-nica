@@ -90,6 +90,11 @@
     width: 30%;
 }
 
+.form-section {
+    margin: 5em 0 6% 5%;
+    display: none;
+}
+
 .bottom__audio-button {
     border: 2px solid var(--light-border-color);
     color: var(--font-color);
@@ -141,10 +146,22 @@
     .check-address-button {
         width: 45%;
     }
+
+    .main__profile {
+        width: 10%;
+    }
 }
 
 
 @media screen and (min-width: 1690px) {
+    main {
+        margin: 0 0 0 12%;
+    }
+    
+    .form__modify-select {
+        display: inline;
+    }
+
     .list__appointment-online {
         width: 30%;
     }
@@ -155,5 +172,102 @@
 
     .appointments {
         margin: 0 3%;
+    }
+
+    .form-section {
+        display: block;
+    }
+
+    .form {
+        margin-top: 3%;
+    }
+
+    .label-form {
+        font-size: 1.2em;
+        font-weight: 450;
+    }
+
+    #tipo-consulta {
+        width: 8em;
+        margin-left: 2.5em;
+    }
+
+    /* #submit {
+        
+    } */
+
+    .label__tipo-consula {
+        margin-left: 18.5em;
+    }
+
+    .input-form {
+        color: var(--font-color);
+        margin: 0.5em 0 1.5em 0;
+        height: 3.5em;
+        width: 14em;
+        padding: 0 1em 0 1em;
+        border: 2px solid #ECECEC;
+        border-radius: 0.5em;
+        font-size: 1.4em;
+    }
+
+    #observacoes {
+        padding: 0.5em 1em 0.5em 1em;
+        width: 22em;
+        height: 4em;
+        margin-bottom: 1em;
+    }
+
+    #submit {
+        border: 3px solid #4894FF;
+        color: #4894FF;
+        padding: 1em;
+        width: 10em;
+        height: 4.5em;
+        border-radius: 0.5em;
+    }
+
+    input[type="submit"] {
+        font-weight: 900;
+        font-size: 1em;
+    }
+
+    .input-date, .input-time {
+        width: 10em;
+        margin-right: 2.5em;
+    }
+
+    .label__tipo-time {
+        margin-left: 8.3em;
+    }
+
+    .input-form::placeholder {
+        color: #4894FF;
+    }
+
+    input::-webkit-datetime-edit-day-field,
+    input::-webkit-datetime-edit-month-field,
+    input::-webkit-datetime-edit-year-field {
+        color: var(--font-light-color);
+    }
+
+    .input-form:hover {
+        border-color: #CFCFCF;
+    }
+
+    .input-form:focus {
+        box-shadow: 0 0 9px #4894FF;
+        outline: 3px solid #4894FF;
+    }
+
+    .input-form:invalid {
+        border: 2px solid red;
+    }
+
+
+
+    #nome::placeholder {
+        color: var(--font-light-color);
+        /* font-size: 2em; */
     }
 }
